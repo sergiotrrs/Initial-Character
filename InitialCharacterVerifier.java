@@ -10,14 +10,14 @@ public class InitialCharacterVerifier{
     	while(yn){	    	
 	    	System.out.println("\n Ingresa la cadena:");
     		cadena = scan.nextLine();
-	    	System.out.println("La palabra inicial " + Principal(cadena));
+	    	System.out.println("La palabra inicial " + checkInitialCharacter(cadena));
 	    	System.out.println("¿Desea continuar? (Y/N) \n");
 	    	yn = scan.nextLine().trim().equalsIgnoreCase("y");
     	}
     	scan.close();
     	System.exit(0);
     }
-	public static String Principal(String cadena) {
+	public static String checkInitialCharacter(String cadena) {
 		if(cadena == "" || cadena == null) {
     		return "esta vacia";
     	}
